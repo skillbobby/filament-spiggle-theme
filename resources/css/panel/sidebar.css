@@ -1,0 +1,48 @@
+/* Sidebar Container */
+.fi-sidebar {
+    background-color: #FFFFFF !important;
+    border-right: 1px solid #E5E7EB;
+}
+
+/* Sidebar Navigation Items */
+.fi-sidebar-item-button {
+    border-radius: 0.75rem !important;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    color: #475569 !important;
+}
+
+.fi-sidebar-item-button:hover {
+    background-color: #F8FAFC !important;
+    color: #1E293B !important;
+}
+
+/* Active Nav Item - TailAdmin Blue Pill Accent */
+.fi-sidebar-item-active .fi-sidebar-item-button {
+    background-color: #E0EAFF !important;
+    color: #465FFF !important;
+    font-weight: 600;
+}
+
+.fi-sidebar-item-active .fi-sidebar-item-icon {
+    color: #465FFF !important;
+}
+
+/* Sidebar Group Headings (MENU) */
+.fi-sidebar-group-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #94A3B8 !important;
+}
+
+/* Sidebar Badges (e.g. "NEW") */
+.fi-sidebar-item-badge {
+    background-color: #E6F9F0 !important;
+    color: #10B981 !important;
+    font-weight: 600;
+    font-size: 0.68rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 9999px;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import './panel/index.css';
+@import './form/index.css';
+@import './table/index.css';
+@import './widget/index.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Typography & Background */
+body {
+    font-family: 'Outfit', sans-serif !important;
+    background-color: #F3F4F6;
+    color: #1D2129;
+}
+
+/* Scrollbar Refinement */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}

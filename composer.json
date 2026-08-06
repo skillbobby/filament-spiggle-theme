@@ -1,0 +1,31 @@
+{
+    "name": "spiggle/filament-spiggle-theme",
+    "description": "A clean, modern TailAdmin-inspired theme for Filament PHP applications featuring the Outfit font and high-contrast UI accents.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Spiggle",
+            "email": "dev@spiggle.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "filament/filament": "^3.0|^4.0|^5.0",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spiggle\\FilamentSpiggleTheme\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Spiggle\\FilamentSpiggleTheme\\FilamentSpiggleThemeServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
