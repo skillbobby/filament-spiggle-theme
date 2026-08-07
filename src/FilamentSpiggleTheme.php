@@ -32,7 +32,7 @@ class FilamentSpiggleTheme implements Plugin
                 ],
                 'gray' => Color::Slate,
             ])
-            ->viteTheme('vendor/spiggle/filament-spiggle-theme/resources/css/theme.css');
+            ->theme('spiggle-theme');
     }
 
     public function boot(Panel $panel): void
