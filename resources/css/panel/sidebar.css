@@ -1,13 +1,13 @@
 /* Sidebar Container */
 .fi-sidebar {
     background-color: #FFFFFF !important;
-    border-right: 1px solid #E5E7EB;
+    border-right: 1px solid #E5E7EB !important;
 }
 
 /* Sidebar Navigation Items */
 .fi-sidebar-item-button {
-    border-radius: 0.75rem !important;
-    font-weight: 500;
+    border-radius: 0.5rem !important;
+    font-weight: 500 !important;
     transition: all 0.2s ease-in-out;
     color: #475569 !important;
 }
@@ -17,40 +17,58 @@
     color: #1E293B !important;
 }
 
-/* Active Nav Item - TailAdmin Blue Pill Accent */
-.fi-sidebar-item-active .fi-sidebar-item-button {
+/* Active Nav Item Pill */
+.fi-sidebar-item-active > .fi-sidebar-item-button {
     background-color: #E0EAFF !important;
     color: #465FFF !important;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
-.fi-sidebar-item-active .fi-sidebar-item-icon {
+.fi-sidebar-item-active > .fi-sidebar-item-button .fi-sidebar-item-icon {
     color: #465FFF !important;
 }
 
-/* Sidebar Group Headings (MENU) */
+/* Sidebar Group Labels (MENU, SUPPORT, OTHERS) */
 .fi-sidebar-group-label {
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: #94A3B8 !important;
+    color: #8A99AF !important; 
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    margin-top: 1rem !important;
 }
 
 /* Sidebar Badges (e.g. "NEW") */
 .fi-sidebar-item-badge {
     background-color: #E6F9F0 !important;
     color: #10B981 !important;
-    font-weight: 600;
-    font-size: 0.68rem;
-    padding: 0.15rem 0.5rem;
-    border-radius: 9999px;
+    font-weight: 600 !important;
+    font-size: 0.68rem !important;
+    padding: 0.15rem 0.5rem !important;
+    border-radius: 9999px !important;
+}
+
+/* Sub-menu Indentation & Styling */
+.fi-sidebar-sub-group {
+    padding-left: 2.5rem !important;
+}
+
+.fi-sidebar-sub-group .fi-sidebar-item-button {
+    font-size: 0.875rem !important;
+    color: #64748B !important;
+}
+
+.fi-sidebar-sub-group .fi-sidebar-item-active > .fi-sidebar-item-button {
+    background-color: transparent !important;
+    color: #465FFF !important;
+    font-weight: 600 !important;
 }
 
 /* TailAdmin Mobile Sidebar Overlay (Dark Backdrop) */
 .fi-sidebar-close-overlay {
-    background-color: rgba(15, 23, 42, 0.6) !important; /* Dark Slate backdrop */
+    background-color: rgba(15, 23, 42, 0.6) !important;
     backdrop-filter: blur(2px) !important;
+    z-index: 40 !important;
 }
 
 /* Mobile Sidebar Slide-in Shadow */
@@ -58,5 +76,6 @@
     .fi-sidebar {
         box-shadow: 10px 0 25px -5px rgba(0, 0, 0, 0.1), 8px 0 10px -6px rgba(0, 0, 0, 0.1) !important;
         border-right: none !important;
+        z-index: 50 !important;
     }
 }
