@@ -1,7 +1,8 @@
-import preset from './vendor/filament/filament/tailwind.config.preset'
-
 export default {
-    presets: [preset],
+    // Disable preflight so your theme doesn't inject a duplicate CSS reset
+    corePlugins: {
+        preflight: false,
+    },
     content: [
         './app/Filament/**/*.php',
         './resources/views/filament/**/*.blade.php',
@@ -20,7 +21,7 @@ export default {
                     200: '#C7D7FE',
                     300: '#A4BCFD',
                     400: '#7A96FC',
-                    500: '#465FFF', // TailAdmin Primary Blue
+                    500: '#465FFF',
                     600: '#3544E5',
                     700: '#2A34B8',
                     800: '#262D93',
