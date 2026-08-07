@@ -2,9 +2,9 @@
 
 namespace Spiggle\FilamentSpiggleTheme;
 
+use Filament\Panel;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
-use Filament\Support\Facades\FilamentColor;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -21,25 +21,16 @@ class FilamentSpiggleThemeServiceProvider extends PackageServiceProvider
 
     public function packageBooted(): void
     {
-        // 1. Inject the CSS globally to all Filament panels
+        // 1. Inject the compiled CSS
         FilamentAsset::register([
             Css::make('spiggle-theme', __DIR__ . '/../resources/dist/theme.css'),
         ], 'spiggle/filament-spiggle-theme');
 
-        // 2. Register the TailAdmin primary colors globally
-        FilamentColor::register([
-            'primary' => [
-                50 => '#EEF2FF',
-                100 => '#E0EAFF',
-                200 => '#C7D7FE',
-                300 => '#A4BCFD',
-                400 => '#7A96FC',
-                500 => '#465FFF',
-                600 => '#3544E5',
-                700 => '#2A34B8',
-                800 => '#262D93',
-                900 => '#242B74',
-            ],
-        ]);
+        // 2. Force layout settings onto ALL panels in the host application
+        Panel::configureUsing(function (Panel $panel) {
+            $panel
+                ->sidebarCollapsibleOnDesktop()
+                ->collapsedSidebarWidth('5rem');
+        });
     }
 }
