@@ -46,3 +46,17 @@
     padding: 0.15rem 0.5rem;
     border-radius: 9999px;
 }
+
+/* TailAdmin Mobile Sidebar Overlay (Dark Backdrop) */
+.fi-sidebar-close-overlay {
+    background-color: rgba(15, 23, 42, 0.6) !important; /* Dark Slate backdrop */
+    backdrop-filter: blur(2px) !important;
+}
+
+/* Mobile Sidebar Slide-in Shadow */
+@media (max-width: 1024px) {
+    .fi-sidebar {
+        box-shadow: 10px 0 25px -5px rgba(0, 0, 0, 0.1), 8px 0 10px -6px rgba(0, 0, 0, 0.1) !important;
+        border-right: none !important;
+    }
+}
