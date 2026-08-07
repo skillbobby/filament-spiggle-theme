@@ -31,8 +31,7 @@ class FilamentSpiggleTheme implements Plugin
                     900 => '#242B74',
                 ],
                 'gray' => Color::Slate,
-            ])
-            ->theme('spiggle-theme');
+            ]);
     }
 
     public function boot(Panel $panel): void
