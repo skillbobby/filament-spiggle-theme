@@ -1,6 +1,21 @@
-/* .fi-modal-window {
-    @apply  border rounded-2xl border-blue-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 relative inline-block before:absolute before:inset-1 before:block  before:bg-white dark:before:bg-gray-800 before:border before:border-gray-300 dark:before:border-gray-700 before:rounded-[calc(var(--radius-2xl)-var(--spacing))] before:-z-10;
-} */
+/* Darkened Backdrop Overlay */
+.fi-modal-close-overlay {
+    background-color: rgba(15, 23, 42, 0.4) !important;
+    backdrop-filter: blur(4px) !important;
+    z-index: 40 !important; /* Higher than topbar to prevent bleeding */
+}
+
+/* Rounded Modal Window */
 .fi-modal-window {
-    @apply rounded-2xl;
+    border-radius: 1.25rem !important;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+    border: none !important;
+    background-color: #FFFFFF !important;
+    z-index: 50 !important;
+}
+
+/* Modal Header/Footer Spacing */
+.fi-modal-header, 
+.fi-modal-footer {
+    padding: 1.5rem !important;
 }
