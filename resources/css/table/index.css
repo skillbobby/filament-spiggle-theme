@@ -1,14 +1,39 @@
-.fi-ta{
-    @apply bg-gray-50 dark:bg-gray-800 p-1 border border-gray-300 dark:border-gray-700 rounded-2xl;
-}
-.fi-ta-ctn {
-    @apply bg-white dark:bg-gray-800 rounded-[calc(var(--radius-2xl)-var(--spacing))]  border border-gray-300 dark:border-gray-700 ring-0 shadow-none
-}
-
-.fi-ta-ctn .fi-ta-header-toolbar {
-    @apply border-0;
+/* Table Container & White Surface */
+.fi-ta-ctn,
+.fi-ta-content {
+    background-color: #ffffff !important;
+    border-radius: 1rem !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02) !important;
 }
 
-.fi-dropdown .fi-icon-btn-badge-ctn {
-    @apply dark:bg-gray-800;
+/* Table Header */
+.fi-ta-header-cell {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    font-weight: 600 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+/* Table Rows & Cells */
+.fi-ta-row {
+    background-color: #ffffff !important;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.fi-ta-row:hover {
+    background-color: #f8fafc !important;
+}
+
+.fi-ta-cell {
+    border-bottom: 1px solid #f1f5f9 !important;
+    color: #1e293b !important;
+}
+
+/* Pagination Footer */
+.fi-ta-pagination {
+    background-color: #ffffff !important;
+    border-top: 1px solid #e5e7eb !important;
+    border-bottom-left-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
 }
