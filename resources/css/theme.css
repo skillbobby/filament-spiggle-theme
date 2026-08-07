@@ -8,6 +8,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+/* ... your other imports ... */
+
+/* Force TailAdmin Blue Override */
+:root {
+    --primary-50: 238, 242, 255 !important;
+    --primary-100: 224, 234, 255 !important;
+    --primary-200: 199, 215, 254 !important;
+    --primary-300: 164, 188, 253 !important;
+    --primary-400: 122, 150, 252 !important;
+    --primary-500: 70, 95, 255 !important; /* #465FFF */
+    --primary-600: 53, 68, 229 !important;
+    --primary-700: 42, 52, 184 !important;
+    --primary-800: 38, 45, 147 !important;
+    --primary-900: 36, 43, 116 !important;
+}
+
+@tailwind base;
+/* ... rest of your css ... */
+
 /* Base Typography & Background */
 body {
     font-family: 'Outfit', sans-serif !important;
