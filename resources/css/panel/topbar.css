@@ -28,3 +28,23 @@
 .fi-icon-btn:hover {
     background-color: #F8FAFC;
 }
+
+/* Mobile Hamburger Menu Toggle Button */
+@media (max-width: 1024px) {
+    .fi-topbar .fi-icon-btn {
+        border-radius: 0.5rem !important; /* Rounded square instead of full circle */
+        background-color: #F1F5F9 !important;
+        border: 1px solid #E2E8F0 !important;
+        color: #0F172A !important;
+    }
+    
+    .fi-topbar .fi-icon-btn:active {
+        background-color: #E2E8F0 !important;
+    }
+
+    /* Reduce topbar padding slightly on mobile for more screen real estate */
+    .fi-topbar nav {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
