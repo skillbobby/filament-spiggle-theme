@@ -17,7 +17,6 @@ A sleek, modern **TailAdmin-inspired theme** for Filament PHP applications (v3, 
 
 ### 1. Install via Composer
 ```bash
-composer require spiggle/filament-spiggle-theme
+`composer require spiggle/filament-spiggle-theme`
 
-### 2. Register the Plugin in your Panel Provider
-In your main Laravel application, open your Filament Panel Provider (typically located at `app/Providers/Filament/AdminPanelProvider.php`) and register the plugin:
+That's it! The theme will automatically apply to all your Filament panels.
