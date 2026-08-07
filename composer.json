@@ -1,6 +1,6 @@
 {
     "name": "spiggle/filament-spiggle-theme",
-    "description": "A clean, modern TailAdmin-inspired theme for Filament PHP applications featuring the Outfit font and high-contrast UI accents.",
+    "description": "A clean, modern TailAdmin-inspired theme for Filament PHP applications featuring modern fonts and high-contrast UI accents.",
     "type": "library",
     "license": "MIT",
     "authors": [
