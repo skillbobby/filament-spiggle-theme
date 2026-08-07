@@ -1,38 +1,44 @@
-/* Topbar Container */
+/* Sticky Topbar Container */
 .fi-topbar {
-    background-color: #FFFFFF !important;
-    border-bottom: 1px solid #E5E7EB;
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 20 !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(8px) !important;
+    border-bottom: 1px solid #E2E8F0 !important;
 }
 
-/* Global Search Input Field */
-.fi-global-search-field .fi-input-wrp {
-    border-radius: 0.75rem !important;
+/* Search Bar Styling */
+.fi-global-search-field input {
     background-color: #F8FAFC !important;
     border: 1px solid #E2E8F0 !important;
+    border-radius: 0.5rem !important;
+    padding-left: 2.5rem !important;
     box-shadow: none !important;
 }
 
-.fi-global-search-field .fi-input-wrp:focus-within {
-    border-color: #465FFF !important;
+.fi-global-search-field input:focus {
     background-color: #FFFFFF !important;
+    border-color: #465FFF !important;
+    box-shadow: 0 0 0 1px #465FFF !important;
 }
 
 /* Round Action Icons (Dark Mode, Notifications) */
 .fi-icon-btn {
     border-radius: 9999px !important;
-    border: 1px solid #E2E8F0;
-    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0 !important;
+    background-color: #FFFFFF !important;
     transition: background-color 0.2s ease;
 }
 
 .fi-icon-btn:hover {
-    background-color: #F8FAFC;
+    background-color: #F8FAFC !important;
 }
 
 /* Mobile Hamburger Menu Toggle Button */
 @media (max-width: 1024px) {
     .fi-topbar .fi-icon-btn {
-        border-radius: 0.5rem !important; /* Rounded square instead of full circle */
+        border-radius: 0.5rem !important; 
         background-color: #F1F5F9 !important;
         border: 1px solid #E2E8F0 !important;
         color: #0F172A !important;
@@ -42,7 +48,6 @@
         background-color: #E2E8F0 !important;
     }
 
-    /* Reduce topbar padding slightly on mobile for more screen real estate */
     .fi-topbar nav {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
